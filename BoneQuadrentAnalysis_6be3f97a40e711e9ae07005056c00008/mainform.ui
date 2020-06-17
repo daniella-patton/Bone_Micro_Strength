@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QWidget" name="MainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>484</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="BonehorizontalLayout">
+     <item>
+      <widget class="QLabel" name="BoneROIlabel">
+       <property name="text">
+        <string>Bone ROI:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="OrsObjectClassComboBox" name="BoneROIcomboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="CorticalhorizontalLayout">
+     <item>
+      <widget class="QLabel" name="CorticalROIlabel">
+       <property name="text">
+        <string>Cortical ROI:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="OrsObjectClassComboBox" name="CorticalROIcomboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="MarrowhorizontalLayout">
+     <item>
+      <widget class="QLabel" name="MarrowROIlabel">
+       <property name="text">
+        <string>Marrow ROI:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="OrsObjectClassComboBox" name="MarrowROIcomboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="checkBox_calcBoneQuadrentProps">
+     <property name="text">
+      <string>Calculate 3D Bone Quadrent Properties</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>                                    - Trab.BFV, Trab.th</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>                                   - Cort.BVF, Cort.Thickness</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="checkBox_calcMarrowProps">
+     <property name="text">
+      <string>Calculate 3D Marrow Spacing Properties</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>                                    - Trab.Sp</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="checkBox_calcCorticalSliceProps">
+     <property name="text">
+      <string>Calculate 2D Properties</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>                                    - Tt.Ar, Ct.Ar, Ma.Ar</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>                                    - Geometric Centroids: Cortex, Periosteal, Endocortical Surface</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>                                    - Ct.th</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>                                    - Cort.BVF, Trab.BVF</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>                                    - Ixx, Iyy, Ixy, Imin, Imax, IPolar</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Enter the amount of z-slice padding:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="zSlicePadding_spinBox">
+       <property name="maximum">
+        <number>250</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="OutputFolderhorizontalLayout">
+     <item>
+      <widget class="QLabel" name="OutputFolderlabel">
+       <property name="text">
+        <string>Output Folder:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="OutputFolderlineEdit"/>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton_OutputFolder">
+       <property name="text">
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="ComputeverticalLayout">
+     <item>
+      <widget class="QPushButton" name="ComputepushButton">
+       <property name="text">
+        <string>Compute</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OrsObjectClassComboBox</class>
+   <extends>QComboBox</extends>
+   <header>ORSServiceClass.ORSWidget.orsobjectclasscombobox.orsobjectclasscombobox</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

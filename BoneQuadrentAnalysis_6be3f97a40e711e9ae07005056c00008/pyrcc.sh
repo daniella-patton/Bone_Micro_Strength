@@ -1,0 +1,1 @@
+LD_LIBRARY_PATH="${ORSPATH}/libs:${LD_LIBRARY_PATH}"  "${PYTHONHOME}/bin/pyrcc5" "./BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008.qrc" -o "./BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008_rc.py"
