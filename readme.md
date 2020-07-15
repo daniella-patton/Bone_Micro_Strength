@@ -108,7 +108,7 @@ The statistical analysis was completed in three parts with increasing levels of 
 * 2. [Bone Quadrent Analysis](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008): Plots were created using the sklearn package in Python 3.0.
 
 
-* 2. [Bone Quadrent Analysis](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008): To identify the variables in each level of refinement that change with age and differ by sex, least squares multiple linear regression including age, sex, and sex-age interaction was reported. The analysis of covariance (ANCOVA) was used to test whether the structural details of bone are equal across sex when controlling for age. 
+* 3. [Bone Quadrent Analysis](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008): To identify the variables in each level of refinement that change with age and differ by sex, least squares multiple linear regression including age, sex, and sex-age interaction was reported. The analysis of covariance (ANCOVA) was used to test whether the structural details of bone are equal across sex when controlling for age. 
 
 
 <!-- USAGE EXAMPLES -->
