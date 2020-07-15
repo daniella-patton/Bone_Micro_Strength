@@ -1,15 +1,3 @@
-
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -31,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/daniella-patton/Bone_Micro_Strength">
-    <img src="BrokenProxFemur.jpeg" alt="Logo" width="300" height="300">
+    <img src="BrokenProxFemur.jpeg" alt="Logo" width="450" height="450">
   </a>
 
   <h3 align="center">Bone Microstructure vs. Whole Bone Strength Project</h3>
@@ -39,14 +27,9 @@
   <p align="center">
    A repository for all of the code for an in process manuscript. 
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/daniella-patton/Bone_Micro_Strength/readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </p>
 
@@ -72,7 +55,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The work in this project was created as part of work developed for 
+
+The first objective of this study was to identify the cortical and trabecular traits in the femoral neck that best predicts bone strength in males and females. The second objective was to determine whether adding progressively more cortical and trabecular structural detail improves strength predictions and whether the additional detail is necessary to explain age and sex-specific differences in bone strength. We hypothesized that both cortical and trabecular parameters contribute to proximal femur strength and that localized regions of the femoral neck would better explain strength compared to measures that are averaged across the femoral neck.  
+
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
@@ -176,6 +162,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
+* [GitHub Pages for othneildrew](https://github.com/othneildrew/Best-README-Template)
 * [Animate.css](https://daneden.github.io/animate.css)
 * [Loaders.css](https://connoratherton.com/loaders)
 * [Slick Carousel](https://kenwheeler.github.io/slick)
