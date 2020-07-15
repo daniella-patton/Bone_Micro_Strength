@@ -39,8 +39,8 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
+* [Overview of the Methods](#Overview-of-the-Methods)
+  * [Volume Extraction](#Volume-Extraction)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
@@ -69,7 +69,7 @@ The major framework used for this project include the following:
 * [Anaconda](https://www.anaconda.com/)
 
 
-<!-- GETTING STARTED -->
+<!-- Overview of the Methods -->
 ## Overview of the Methods
 
 Cadaveric proximal femurs were scanned at 27 um resolution. Proximal femur strength data (i.e., maximum load) were reported previously to compare whole bone strength across skeletal sites (Patton et al, J Biomech 2019) and are used here to test for structure-function relationships.
