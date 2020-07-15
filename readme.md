@@ -95,26 +95,18 @@ Additional details will not be described here, but the networks has a dice coeff
 
 Measures of cortical and trabecular architecture were quantified using a custom written plug-in to run within the framework of Dragonfly:  
 
-* 1. [GT_ROI repository folder ](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/Ground_Truth_ROI_d7417746294e11e9a4db005056c00008):
+* 1. [Bone Quadrent Analysis](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008):
 Bone volume fraction was determined as the number of bone voxels normalized by the total number of voxels. Average thickness measures were determined by averaging a 3-D volume thickness map, which labeled each voxel of the VOI as the diameter of the largest sphere that can fit in the VOI at that location. Moments of inertia (rectangular, polar), cortical area (Ct.Ar) and total area (Tt.Ar) were quantified for the cortical shell. Each femoral neck volume was padded by 200 slices on the proximal and distal boundary before analysis to remove the possibility of boundary condition errors for cortical bone (i.e., underestimation of bone thickness). 
 
-
 ### Statistical Analysis
-The statistical analysis was completed in three parts with increasing levels of refinement from least (Level 1) to most (Level 3). When/if the manuscript is published, I will attach a link directly to the publication. 
+The statistical analysis was completed in three parts with increasing levels of refinement from least (Level 1) to most (Level 3). When/if the manuscript is published, I will attach a link directly to the publication for more information. 
 
-However, subsequent anlysis of each level of refinement were completed in RStudio and can be found here.
+* 1. [Bone Quadrent Analysis](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008): However, subsequent anlysis of each level of refinement were completed in RStudio and can be found here. The least absolute shrinkage and operator (LASSO) method from the glmnet package was used for the analysis of refinement level to identify the variables that were collectively the best predictors of bone strength. Outliers were removed, variables were normalized so coefficients could be compared directly, and data were split into training (75%) and test (25%) sets for each refinement level. The tuning parameter, λ, was determined using a three-fold cross validation on the training data. Two hundred λ values were tested for each model and the λ value that resulted in the most regularized model (i.e., λ1se) was determined. This was repeated 200 times and the median λ1se was used as the final value for the analysis to ensure convergence on consistent λ values.  Variables selected with the lasso regression were included in a final multiple linear regression model.
 
-The least absolute shrinkage and operator (LASSO) method from the glmnet package was used for the analysis of refinement level to identify the variables that were collectively the best predictors of bone strength. LASSO regression is a machine learning model that performs well on datasets with few observations and many features and that increases model interpretability by eliminating irrelevant variables.
-
-Outliers were removed, variables were normalized so coefficients could be compared directly, and data were split into training (75%) and test (25%) sets for each refinement level. The tuning parameter, λ, was determined using a three-fold cross validation on the training data. Briefly, two hundred λ values were tested (Range: 0.001- 100000, Sequence: 10ji, j_i=∑_(-3)^5▒〖j_(i-1)+0.04〗) for each model and the λ value that resulted in the most regularized model (i.e., λ1se) was determined. λ1se is the λ value that lies within one standard error of the optimal value that minimizes the mean squared-error (i.e., λmin) [27]. This was repeated 200 times and the median λ1se was used as the final value for the analysis to ensure convergence on consistent λ values. 
+* 2. [Bone Quadrent Analysis](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008): Plots were created using the sklearn package in Python 3.0.
 
 
-The R2 values were reported for each model on the training and test set along with beta (β) values for variables that were significant predictors of strength. Further, the percent (null) deviance explained (i.e., a measure 1 – deviance ratio of the model divided by the null deviance) was included, which is a measure of how well the response variable is predicted by the final model compared to a saturated model and a model which includes only the intercept. Next, the variables selected with the lasso regression were included in a final multiple linear regression model. Beta values, p-values, and adjusted R-squared values were reported for each of the final models.
-
-
-Plots were created using the sklearn package in Python 3.0 [26].
-
-Finally, to identify the variables in each level of refinement that change with age and differ by sex, least squares multiple linear regression including age, sex, and sex*age interaction was reported. The analysis of covariance (ANCOVA) was used to test whether the structural details of bone are equal across sex when controlling for age. 
+* 2. [Bone Quadrent Analysis](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/BoneQuadrentAnalysis_6be3f97a40e711e9ae07005056c00008): To identify the variables in each level of refinement that change with age and differ by sex, least squares multiple linear regression including age, sex, and sex-age interaction was reported. The analysis of covariance (ANCOVA) was used to test whether the structural details of bone are equal across sex when controlling for age. 
 
 
 <!-- USAGE EXAMPLES -->
