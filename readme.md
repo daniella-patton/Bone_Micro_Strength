@@ -83,18 +83,19 @@ All image processing and quantification of bone microstructure were completed us
 Bone Segmentation and Cortical-Trabecular Separation
 Segmentation of bone from background and cortical from trabecular area were conducted by developing and validating two separate two-dimensional (i.e., slice-by-slice segmentation) fully convolutional neural networks (FCNNs) with U-net architecture. The networks were trained and tested on the dataset within the framework of Dragonfly software 4.0 (ORS, Montreal, Computer: HP Z820 Workstation). 
 
-Two custom plug-ins were created to complete this:  
+Two custom plug-ins were created to run within the framework of Dragonfly:  
 
-* 1. [GT_ROI repository folder ](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/Ground_Truth_ROI_d7417746294e11e9a4db005056c00008): This plugin is used to 'average' three ROIs to create a Ground Truth ROI. The GT ROI is created by setting a voxel as ON if it is on in 2 or more of the three input ROIs, otherwise it is set to OFF. The plugin will check to make sure all three input ROI's exist and are the same shape. The GT ROI will have the same shape as the input ROIs, and will be associated with the same input image as ROI
+* 1. [GT_ROI Plug-in Folder](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/Ground_Truth_ROI_d7417746294e11e9a4db005056c00008): This plugin is used to 'average' three ROIs to create a Ground Truth ROI. The GT ROI is created by setting a voxel as ON if it is on in 2 or more of the three input ROIs, otherwise it is set to OFF. The plugin will check to make sure all three input ROI's exist and are the same shape. The GT ROI will have the same shape as the input ROIs, and will be associated with the same input image as ROI
 
-* 2. [Compare Segmentations folder](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/CompareSegmentations_9de7a126150a11e98401005056c00008): his plugin is used to calculate several image comparison statistics to evaluate various segmentation methods. This plugin requires a "Ground Truth" ROI and the segemented comparison ROI. The plugin will make sure both selected ROIs are valid and the same shape; if not the plugin will return with no results calculated. The results calculated are output to a CSV file, if specified in GUI  
-
+* 2. [Compare Segmentations Plug-in Folder](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/CompareSegmentations_9de7a126150a11e98401005056c00008): his plugin is used to calculate several image comparison statistics to evaluate various segmentation methods. This plugin requires a "Ground Truth" ROI and the segemented comparison ROI. The plugin will make sure both selected ROIs are valid and the same shape; if not the plugin will return with no results calculated. The results calculated are output to a CSV file, if specified in GUI  
 
 Additional details will not be described here, but the networks has a dice coefficient of 0.961 and 0.956 for the bone from background and cortical from trabecular, respectively. Both networks are publicly available on the [infinite toolbox (Dragonfly, ORS)](https://infinitetoolbox.theobjects.com).
 
 ### Quantification of Cortical and Trabecular Microstructure 
-Measures of cortical and trabecular architecture were quantified using a custom written plug-in that is publicly available through the Infinite Toolbox in Dragonfly software 4.0 (ORS, Montreal, Canada, https://infinitetoolbox.theobjects.com/category/Plugins). 
 
+Measures of cortical and trabecular architecture were quantified using a custom written plug-in to run within the framework of Dragonfly:  
+
+* 1. [GT_ROI repository folder ](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/Ground_Truth_ROI_d7417746294e11e9a4db005056c00008):
 Bone volume fraction was determined as the number of bone voxels normalized by the total number of voxels. Average thickness measures were determined by averaging a 3-D volume thickness map, which labeled each voxel of the VOI as the diameter of the largest sphere that can fit in the VOI at that location. Moments of inertia (rectangular, polar), cortical area (Ct.Ar) and total area (Tt.Ar) were quantified for the cortical shell. Each femoral neck volume was padded by 200 slices on the proximal and distal boundary before analysis to remove the possibility of boundary condition errors for cortical bone (i.e., underestimation of bone thickness). 
 
 
@@ -143,7 +144,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Daniella Patton - pattondm@umich.edu
 
-Project Link: [https://github.com/your_username/repo_name]("https://github.com/daniella-patton/Bone_Micro_Strength/blob/master/readme.md")
+Project Link: [https://github.com/daniella-patton/Bone_Micro_Strength]("https://github.com/daniella-patton/Bone_Micro_Strength")
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
