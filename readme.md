@@ -87,7 +87,7 @@ Two custom plug-ins were created to complete this:
 
 * 1. [GT_ROI repository folder ](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/Ground_Truth_ROI_d7417746294e11e9a4db005056c00008): This plugin is used to 'average' three ROIs to create a Ground Truth ROI. The GT ROI is created by setting a voxel as ON if it is on in 2 or more of the three input ROIs, otherwise it is set to OFF. The plugin will check to make sure all three input ROI's exist and are the same shape. The GT ROI will have the same shape as the input ROIs, and will be associated with the same input image as ROI
 
-* 2. [Compare Segmentations folder] The 
+* 2. [Compare Segmentations folder](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/CompareSegmentations_9de7a126150a11e98401005056c00008):  
 
 
 Additional details will not be described here, but the networks has a dice coefficient of 0.961 and 0.956 for the bone from background and cortical from trabecular, respectively. Both networks are publicly available on the [infinite toolbox (Dragonfly, ORS)](https://infinitetoolbox.theobjects.com).
