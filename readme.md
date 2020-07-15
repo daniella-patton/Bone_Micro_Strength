@@ -18,10 +18,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/daniella-patton/Bone_Micro_Strength">
-    <img src="BrokenProxFemur.jpeg" alt="Logo" width="450" height="450">
-  </a>
-
   <h3 align="center">Bone Microstructure vs. Whole Bone Strength Project</h3>
 
   <p align="center">
@@ -29,6 +25,9 @@
     <br />
     <a href="https://github.com/daniella-patton/Bone_Micro_Strength/readme"><strong>Explore the docs »</strong></a>
     <br />
+  <a href="https://github.com/daniella-patton/Bone_Micro_Strength">
+    <img src="BrokenProxFemur.jpeg" alt="Logo" width="450" height="450">
+  </a>
     <br />
   </p>
 </p>
