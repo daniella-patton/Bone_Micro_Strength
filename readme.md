@@ -81,7 +81,16 @@ All image processing and quantification of bone microstructure were completed us
 ### Image Processing and Volume Extraction
 
 Bone Segmentation and Cortical-Trabecular Separation
-Segmentation of bone from background and cortical from trabecular area were conducted by developing and validating two separate two-dimensional (i.e., slice-by-slice segmentation) fully convolutional neural networks (FCNNs) with U-net architecture. The networks were trained and tested on the dataset within the framework of Dragonfly software 4.0 (ORS, Montreal, Computer: HP Z820 Workstation). The details will not be described here, but the networks has a dice coefficient of 0.961 and 0.956 for the bone from background and cortical from trabecular, respectively. Both networks are publicly available on the [infinite toolbox (Dragonfly, ORS)](https://infinitetoolbox.theobjects.com).
+Segmentation of bone from background and cortical from trabecular area were conducted by developing and validating two separate two-dimensional (i.e., slice-by-slice segmentation) fully convolutional neural networks (FCNNs) with U-net architecture. The networks were trained and tested on the dataset within the framework of Dragonfly software 4.0 (ORS, Montreal, Computer: HP Z820 Workstation). 
+
+Two custom plug-ins were created to completed this:  
+
+* 1. [GT_ROI repository folder ](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/Ground_Truth_ROI_d7417746294e11e9a4db005056c00008).
+
+* 2. [Compare Segmentations folder] The 
+
+
+Additional details will not be described here, but the networks has a dice coefficient of 0.961 and 0.956 for the bone from background and cortical from trabecular, respectively. Both networks are publicly available on the [infinite toolbox (Dragonfly, ORS)](https://infinitetoolbox.theobjects.com).
 
 ### Quantification of Cortical and Trabecular Microstructure 
 
