@@ -31,13 +31,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/daniella-patton/Bone_Micro_Strength">
-    <img src="BrokenProxFemur.jpeg" alt="Logo" width="80" height="80">
+    <img src="BrokenProxFemur.jpeg" alt="Logo" width="300" height="300">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Bone Microstructure vs. Whole Bone Strength Project</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+   A repository for all of the code for an in process manuscript. 
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
