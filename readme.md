@@ -128,8 +128,7 @@ Additional contributors will be added **post manuscript review**.
 
 <!-- LICENSE -->
 ## License
-
-Distributed under the MIT License. See `LICENSE`.
+MIT © Daniella Patton
 
 
 
