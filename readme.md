@@ -83,7 +83,7 @@ All image processing and quantification of bone microstructure were completed us
 Bone Segmentation and Cortical-Trabecular Separation
 Segmentation of bone from background and cortical from trabecular area were conducted by developing and validating two separate two-dimensional (i.e., slice-by-slice segmentation) fully convolutional neural networks (FCNNs) with U-net architecture. The networks were trained and tested on the dataset within the framework of Dragonfly software 4.0 (ORS, Montreal, Computer: HP Z820 Workstation). 
 
-Two custom plug-ins were created to completed this:  
+Two custom plug-ins were created to complete this:  
 
 * 1. [GT_ROI repository folder ](https://github.com/daniella-patton/Bone_Micro_Strength/tree/master/Ground_Truth_ROI_d7417746294e11e9a4db005056c00008).
 
